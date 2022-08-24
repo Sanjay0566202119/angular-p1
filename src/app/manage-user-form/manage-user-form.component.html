@@ -1,0 +1,50 @@
+<div class="container mt-5">
+    <h2 class="mb-5">Add User</h2>
+
+    <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label>User Auuid	</label>
+                    <input type="text" formControlName="userauuid" class="form-control" placeholder="User Auuid">
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label> First Name</label>
+                    <input type="text" formControlName="firstName" class="form-control" placeholder=" First Name">
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label> Last Name</label>
+                    <input type="text" formControlName="lastName" class="form-control" placeholder="Last Name">
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label>Rol</label>
+                    <input type="text" formControlName="rol" class="form-control" placeholder="User Rol">
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label>Mobile	</label>
+                    <input type="text" formControlName="mobile" class="form-control" placeholder="User Mobile">
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="form-group">
+                    <label>RM NAME </label>
+                    <input type="text"  formControlName="raName"  class="form-control" placeholder="User RM NAME">
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <button class="btn btn-primary">Submit </button>
+            </div>
+
+        </div>
+    </form>
+
+
+</div>
