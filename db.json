@@ -1,0 +1,26 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "firstname": "Sanjay",
+      "lastname": "dutt",
+      "email": "sanjay@gdd.com",
+      "phone": "22222",
+      "salary": "323232"
+    },
+    {
+      "id": 2,
+      "firstname": "saurabh",
+      "email": "wqwq",
+      "phone": "222e",
+      "salary": "ee"
+    },
+    {
+      "id": 3,
+      "firstname": "",
+      "email": "",
+      "phone": "",
+      "salary": ""
+    }
+  ]
+}
