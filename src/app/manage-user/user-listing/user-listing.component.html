@@ -10,18 +10,40 @@
         
         <th>RM NAME
         </th>
+         
+        <th>Action
+        </th>
        </tr>
     </thead>
 
 
-    <tbody>
-        <tr *ngFor="let item of userData">
+    <tbody *ngIf="userData.length; else notfound">
+        <tr *ngFor="let item of userData; let i = index">
             <td>{{item.userauuid}}</td>
             <td>{{item.firstName}}</td>
             <td>{{item.lastName}}</td>
             <td>{{item.mobile}}</td>
             <td>{{item.rol}}</td>
             <td>{{item.raName}}</td>
+            <td>
+              
+                <span class="btn btn-primary" routerLink="/manage-user/{{item.id}}">Edit</span>
+                <span class="btn btn-danger ml-2" (click)="deleteItem(i,item.id)">Delete</span>
+            </td>
         </tr>
+       
     </tbody>
+    <ng-template #notfound>
+        <tbody>
+            <tr>
+                <td colspan="7">
+                        <h3 class="notfound p-5 w-100 text-center">
+                            Data not Found
+                        </h3>
+                </td>
+            </tr>
+        </tbody>
+</ng-template>
+    
+    
 </table>

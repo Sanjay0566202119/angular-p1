@@ -7,12 +7,21 @@ import { HttpClient } from '@angular/common/http';
 export class ApiService {
 
   constructor(private http:HttpClient) { }
+url="http://localhost:3000/posts/";
 
-  postUserName(data:any){
-    return this.http.post<any>('http://localhost:3000/posts/',data);
+  postUserName(id:any){
+    return this.http.post<any>(this.url,id);
   }
-  getUserName(data:any){
-    return this.http.get<any>('http://localhost:3000/posts/',data);
+  getUserName(id:any){
+    return this.http.get<any>(this.url,id);
   }
+  deleteUserName(id:any){
+    return this.http.delete<any>(this.url+id);
+  }
+  
+  getCurrentData(id:any){
+    return this.http.get<any>(this.url+id);
+  }
+  
 
 }

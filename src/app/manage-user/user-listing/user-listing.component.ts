@@ -14,7 +14,8 @@ export class UserListingComponent implements OnInit {
 
   ngOnInit(): void {
    
-    this.getUserdata()
+    this.getUserdata();
+ 
   }
 
 
@@ -25,9 +26,17 @@ getUserdata() {
     this.userData = data
   
   })
+}
 
 
+deleteItem(index:any,id:any){
+  this.apiService.deleteUserName(id).subscribe((data: any) => this.userData.splice(index,1))
+}
+editItem(index:any,id:any){
+  this.apiService.getCurrentData(id).subscribe((data: any) => {
 
+    // this.userData.splice(index,1))
+  })
 }
 
 

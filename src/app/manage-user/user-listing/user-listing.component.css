@@ -1,6 +1,9 @@
 th {
     text-transform: uppercase;
 }
+th,td {
+    width: 14%;
+}
 .table {
    
     border: solid 1px #dadada;

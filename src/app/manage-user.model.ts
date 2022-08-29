@@ -1,4 +1,5 @@
 export class ManageUserModel {
+    id:number =0;
     userauuid:string ="";
     firstName: string = "";
     lastName: string = "";

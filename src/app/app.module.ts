@@ -8,13 +8,15 @@ import { UserListingComponent } from './manage-user/user-listing/user-listing.co
 import { ManageUserFormComponent } from './manage-user-form/manage-user-form.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ApiService } from './shared/api.service';
+import { UpdateFormComponent } from './manage-user-form-update/manage-user-form-update.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ManageUserComponent,
     UserListingComponent,
-    ManageUserFormComponent
+    ManageUserFormComponent,
+    UpdateFormComponent
   ],
   imports: [
     BrowserModule,
